@@ -8,5 +8,6 @@ RUN apt-get update -q && \
       groff-base && \
     pip install awscli && \
 
-    apt-get clean apt-get purge && \
+    apt-get clean && \
+    apt-get purge && \
     rm -rf /var/lib/apt/lists/*
